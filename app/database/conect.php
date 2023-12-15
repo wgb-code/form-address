@@ -1,8 +1,8 @@
-<?php 
-    $hospedagem = 'Localhost';
-    $dbuser = 'root';
-    $dbpass = '';
-    $dbname = 'formaddress';
+<?php
 
-    $conexao = new mysqli($hospedagem, $dbuser, $dbpass, $dbname);
-?>
+    $servername = "Localhost";
+    $database = "formaddress";
+    $username = "root";
+    $password = "root";
+
+    $conn = mysqli_connect($servername, $username, $password, $database);

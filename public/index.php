@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="pt-br" class="light">
+    <html lang="pt-br" class="dark">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,7 +41,7 @@
                 
             <div id="mode-button">
                 <h1>Dark mode</h1>
-                <button>
+                <button id="alter-button">
                     <ion-icon name="moon-sharp" size="small"></ion-icon>
                 </button>
             </div>
@@ -57,7 +57,7 @@
             </p>
         </div>
 
-        <form action="#" method="post">
+        <form action="../app/helpers/address.php" method="POST">
             <div id="form-card">
             <h3>Delivery address</h3>
             <p>Used for shipping orders</p>
@@ -76,16 +76,16 @@
 
                 <div class="form-zipcode">
                 <label for="cpf">Zip code</label>
-                <input type="number" name="cpf" id="cpf" />
+                <input type="number" name="cep" id="cep" />
                 </div>
             </div>
             <label for="opcional">Optional</label>
-            <input type="text" name="optional" id="optional" />
+            <input type="text" name="opicional" id="opcional" />
             </div>
 
             <div id="form-button">
             <button id="submit">
-                <ion-icon name="checkmark"></ion-icon>Save
+                <ion-icon name="checkmark" size="small"></ion-icon>Save
             </button>
             </div>
         </form>
@@ -99,5 +99,6 @@
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
+        <script src="./assets/global.js"></script>
     </body>
 </html>

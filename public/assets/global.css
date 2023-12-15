@@ -7,25 +7,81 @@
 }
 
 :root{
-    --titulo-font: 'Raleway', sans-serif;
-    --titulo-weight: 700;
-    --titulo-size: 16px;
-    --titulos-cores: #242731;
+    --background: #FFFFFF;
+    --header-size: 16px;
+    --header-color: #242731;
+    --header-button-color: rgba(0, 0, 0, 0.1);
+    --header-button-color-hover: #fff;
+    --header-button-shadow: rgba(0, 0, 0, 0.1);
+    --header-button-shadow2: rgba(0, 0, 0, 0.08);
+    --header-button-ion: #242426;
+    --header-button-background-hover: transparent;
 
-    --subtitulo-font: 'Poppins', sans-serif;
-    --subtitulo-weight: 700;
-    --subtitulo-line-height: 36px;
-    --subtitulo-size: 32px;
+    --info-title-size: 32px;
+    --info-title-color: #242731;
+    --info-paragraph-size: 16px;
+    --info-paragraph-color: #575F6E;
 
-    --paragrafos-cores: #575F6E;
-    --paragrafos-size: 16px;
-    --paragrafos-weight: 300;
-    --paragrafos-height: 22px;
+    --container-border: #E2E4E5;
+    --container-title-color: #242731;
+    --container-paragraph: #575F6E;
+    --container-paragraph-size: 13px;
+    --container-button-background: #007AFF;
+    --container-button-color: #ffffff;
+    --container-button-ion: #FFF;
 
     --label-color: #242426;
     --label-font:'Poppins', sans-serif;
     --label-size: 14px;
-    --label-height: 20px
+    --label-height: 20px;
+
+    --input-border: #E2E4E5;
+    --input-focus: #242426;
+    --input-color: #000;
+
+    --placeholder-color: #242426;
+    --placeholder-size: 18px;
+}
+
+.dark{
+    --background: #262626;
+    --header-size: 16px;
+    --header-color: #FFFFFF;
+    --header-button-color: rgba(255, 255, 255, 0);
+    --header-button-color-hover: #FFFFFF;
+    --header-button-shadow: #363636;
+    --header-button-shadow2: rgba(255, 255, 255, 0.3);
+    --header-button-ion: #FFF;
+
+    --info-title-size: 32px;
+    --info-title-color: #EEEEEE;
+    --info-paragraph-size: 16px;
+    --info-paragraph-color: #A7A6A6;
+
+    --container-border: #ffffff10;
+    --container-title-color: #EEEEEE;
+    --container-paragraph: #A7A6A6;
+    --container-paragraph-size: 13px;
+    --container-button-background: #EEEEEE;
+    --container-button-color: #000;
+    --container-button-ion: #000;
+
+    --label-color: #A7A6A6;
+    --label-font:'Poppins', sans-serif;
+    --label-size: 14px;
+    --label-height: 20px;
+
+    --input-border: #a7a6a67e;
+    --input-focus: #FFF;
+    --input-color: #FFF;
+
+    --placeholder-color: #FFFFFF;
+    --placeholder-size: 15px;
+
+}
+
+body{
+    background-color: var(--background);
 }
 
 /*      HEADER      */
@@ -60,30 +116,25 @@
     text-align: center;
     padding: 10px;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+    color: var(--header-button-hover);
+    border-bottom: 1px solid var(--header-button-color);
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 0px var(--header-button-shadow),
+                0px 1px 3px 0px var(--header-button-shadow2);
     background-color: transparent;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
 
-#mode-button button:hover{
-    background-color: 1px solid #fff;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1),
-                0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-    border-radius: 50%;
-    transition: all 0.5s ease-in-out;
-}
-
 #mode-button ion-icon{
-    color: #242426;
+    color: var(--header-button-ion);
 }
 
 #header-nav h1{
-    font-family: var(--titulo-font);
-    font-size: var(--titulo-size);
-    font-weight: var(--titulo-weight);
-    
-    color: var(--titulos-cores);
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--header-size);
+    font-weight: 700;
+    color: var(--header-color);
 }
 
 
@@ -97,18 +148,18 @@
 }
 
 #title-page h2{
-    font-family: var(--subtitulo-font);
-    font-size: var(--subtitulo-size);
-    font-weight: var(--subtitulo-weight);
-    color: var(--titulos-cores);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--info-title-size);
+    font-weight: 700;
+    color: var(--info-title-color);
 }
 
 #title-page p{
-    font-size: var(--paragrafos-size);
+    font-size: var(--info-paragraph-size);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: var(--paragrafos-cores);
-    line-height: var(--paragrafos-height);
+    color: var(--info-paragraph-color);
+    line-height: 22px;
 }
 
 /*      CONTAINER FORMULARIO      */
@@ -120,21 +171,21 @@
     align-items: flex-start;
     flex-direction: column;
     border-radius: 8px;
-    border: 1px solid #E2E4E5;
+    border: 1px solid var(--container-border);
 }
 
 #form-card h3{
-    color: var(--titulos-cores);
-    font-family: var(--subtitulo-font);
+    color: var(--container-title-color);
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 28px;
 }
 
 #form-card p{
-    color: var(--paragrafos-cores);
+    color: var(--container-paragraph);
     font-family: 'Poppins', sans-serif;
-    font-size: var(--paragrafos-size);
+    font-size: var(--container-paragraph-size);
     line-height: 16px;
 }
 
@@ -154,8 +205,10 @@
 #form-card input{
     padding: 8px 16px;
     width: 392px;
-    border: 0;
-    border-bottom: 1px solid #E2E4E5;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--input-border);
+    color: var(--input-color);
     cursor: pointer;
 }
 
@@ -171,17 +224,15 @@
     width: 180px;
 }
 
-#form-card input::placeholder{
-    color: var(--placeholder-color);
-    font-family: var(--placeholder-font);
-    font-size: var(--placeholder-size);
-    line-height:var(--placeholder-height);
-}
 
 #form-card input:focus{
     border: 0;
     outline: 0;
-    border-bottom: 1px solid #242426;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid var(--input-focus);
+    color: var(--placeholder-color);
+    font-size: var(--placeholder-size);
+    line-height: 28px;
 }
 
 input::-webkit-outer-spin-button,
@@ -202,9 +253,9 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border-radius: 4px;
     border: none;
-    background: #007AFF;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    background: var(--container-button-background);
+    color: var(--container-button-color);
     font-size: 16px;
     padding: 0px 32px 0px 24px;
     height: 48px;
@@ -220,7 +271,7 @@ input::-webkit-inner-spin-button {
 
 
 ion-icon{
-    color: #fff;
+    color:var(--container-button-ion);
     --ionicon-stroke-width: 24px;
 }
 

@@ -1,0 +1,19 @@
+{
+    "name": "isabel/form-address",
+    "description": "FormAddress",
+    "authors": [
+        {
+            "name": "wgb-code",
+            "email": "front.willian@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "app/helpers/constants.php"
+        ],
+        "psr-4": {
+            "app\\":"app"
+        }
+    }
+}

@@ -1,8 +1,10 @@
 <?php
 
-    $servername = "Localhost";
-    $database = "formaddress";
-    $username = "root";
-    $password = "root";
+    $servername = 'localhost';
+    $username = 'root';
+    $password = 'root';
+    $database = 'formaddress';
 
-    $conn = mysqli_connect($servername, $username, $password, $database);
+    $Conn = mysqli_connect($servername, $username, $password, $database);
+
+    //echo ($conn) ? 'Conexão Sucedida!' : 'Não conectou';

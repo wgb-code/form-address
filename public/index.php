@@ -49,28 +49,28 @@
                 <p>Used for shipping orders</p>
 
                 <label for="endereco">Addres</label>
-                <input type="text" name="endereco" id="endereco" />
+                <input type="text" name="endereco" id="endereco" required/>
 
                 <label for="cidade">City</label>
-                <input type="text" name="cidade" id="cidade" />
+                <input type="text" name="cidade" id="cidade" required/>
 
                 <div class="address-info">
                     <div class="form-country">
                         <label for="pais">Country</label>
-                        <input type="text" name="pais" id="pais" />
+                        <input type="text" name="pais" id="pais" required/>
                     </div>
 
                     <div class="form-zipcode">
                         <label for="cpf">Zip code</label>
-                        <input type="number" name="cep" id="cep" />
+                        <input type="number" name="cep" id="cep" required/>
                     </div>
                 </div>
                 <label for="opcional">Optional</label>
-                <input type="text" name="opicional" id="opcional" />
+                <input type="text" name="opcional" id="opcional"/>
             </div>
 
             <div id="form-button">
-                <button id="submit">
+                <button type="submit" id="submit" name="submit">
                     <ion-icon name="checkmark" size="small"></ion-icon>Save
                 </button>
             </div>

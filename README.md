@@ -11,6 +11,10 @@ Pretendo dar continuidade no desenvolvimento de mais telas para que se torne um 
 
 ## Imagens do projeto
 
- - Dark Mode
+ ##### Dark Mode
 
- ![alt](public/assets/imgs/projeto-dark.png);
+ ![alt](public/assets/imgs/projeto-dark.png)
+
+ ##### Light Mode
+
+ ![alt](public/assets/imgs/projeto-light.png)

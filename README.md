@@ -13,4 +13,12 @@ Pretendo dar continuidade no desenvolvimento de mais telas para que se torne um 
 
     DARK MODE:
 
+    <p align="center">
+        <img alt="projeto DevLinks" src="./public/assets/imgs/projeto-dark.png" width="100%">
+    </p>
+
     LIGHT MODE:
+
+    <p align="center">
+        <img alt="projeto DevLinks" src="./public/assets/imgs/projeto-light.png" width="100%">
+    </p>

@@ -25,7 +25,7 @@
                 <h1>COMPANY NAME</h1>
             </div>
 
-            <div id="mode-button">
+            <div id="mode-button" onclick="toggleMode()">
                 <h1>Dark mode</h1>
                 <button id="alter-button">
                     <ion-icon name="moon-sharp" size="small"></ion-icon>
